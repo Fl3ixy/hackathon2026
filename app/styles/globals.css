@@ -30,6 +30,13 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+
+  /* senior-friendly utilities */
+  .senior-root { font-size: 18px; line-height: 1.6; }
+  .big-btn { padding: .75rem 1.25rem; border-radius: .75rem; font-size: 1rem; }
+  .rounded-section { border-radius: 1rem; }
+  .decorative-corner { box-shadow: 0 8px 24px rgba(16,24,40,0.06); }
+  .diagonal-divider { background: linear-gradient(135deg, rgba(99,102,241,0.06) 0%, rgba(236,72,153,0.04) 100%); transform: skewY(-3deg); margin-top: -3rem; padding-top: 3rem; }
 }
 
 

@@ -1,0 +1,63 @@
+/* Confetti styles for mission completion 🎉 */
+.confetti {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  overflow: visible;
+  z-index: 9999;
+}
+
+.confetti-grid {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20px, 1fr));
+  gap: 8px;
+}
+
+.confetti-piece {
+  display: inline-block;
+  font-size: 20px;
+  will-change: transform, opacity;
+  animation: confetti-fall 2500ms cubic-bezier(.17,.67,.03,.99) forwards;
+}
+
+@keyframes confetti-fall {
+  0% {
+    opacity: 1;
+    transform: translateY(-20vh) rotate(0deg) scale(1);
+  }
+  60% {
+    opacity: 1;
+    transform: translateY(30vh) rotate(180deg) scale(1.1);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(80vh) rotate(360deg) scale(0.9);
+  }
+}
+
+/* Staggered delays for variety */
+.confetti-piece:nth-child(odd) {
+  animation-duration: 2200ms;
+}
+.confetti-piece:nth-child(even) {
+  animation-duration: 2600ms;
+}
+.confetti-piece:nth-child(3n) {
+  animation-delay: 120ms;
+}
+.confetti-piece:nth-child(4n) {
+  animation-delay: 240ms;
+}
+
+/* Respect user preference for reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .confetti-piece {
+    animation: none;
+    opacity: 1;
+  }
+}

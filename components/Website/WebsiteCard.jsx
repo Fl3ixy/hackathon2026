@@ -75,16 +75,16 @@ export function WebsiteCard({ title, description, imageSource }) {
         )}
       </motion.div>
       
-      <h3 className="text-center text-lg font-mono font-semibold">
+      <h3 className="text-center text-lg font-semibold">
         {title}
       </h3>
       
-      <p className="text-sm font-mono text-gray-300 lg:block md:hidden sm:hidden">
+      <p className="text-sm text-gray-300 lg:block md:hidden sm:hidden">
         {description}
       </p>
       
       {isDescriptionVisible && (
-        <p className="text-sm font-mono text-gray-300 hidden md:block sm:block animate-[fadeIn_0.3s_ease-in-out]">
+        <p className="text-sm text-gray-300 hidden md:block sm:block animate-[fadeIn_0.3s_ease-in-out]">
           {description}
         </p>
       )}

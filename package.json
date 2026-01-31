@@ -9,6 +9,9 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@capacitor/android": "^8.0.2",
+    "@capacitor/cli": "^8.0.2",
+    "@capacitor/core": "^8.0.2",
     "@fortawesome/fontawesome-svg-core": "^6.5.1",
     "@fortawesome/free-brands-svg-icons": "^6.5.1",
     "@fortawesome/free-regular-svg-icons": "^6.5.1",
@@ -18,7 +21,7 @@
     "font-awesome": "^4.7.0",
     "framer-motion": "^11.18.2",
     "lucide-react": "^0.485.0",
-    "next": "14.2.23",
+    "next": "^14.2.30",
     "react": "^18",
     "react-dom": "^18",
     "react-particles": "^2.12.2",
